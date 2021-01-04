@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "survey-form": "parcel survey-form/index.html"
+    "survey-form": "parcel survey-form/index.html -p 3000"
   },
   "keywords": [],
   "author": "",
