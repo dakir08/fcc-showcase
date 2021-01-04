@@ -13,28 +13,28 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1 id="title">My Survey</h1>
-    <p id="description">
-      Thank you for taking the time to help us improve the platform
-    </p>
+    <h1 id="title">Survey form</h1>
+    <p id="description">FCC Survey form</p>
     <form id="survey-form">
       <div class="form-control">
-        <label id="name-label">Name</label>
-        <input placeholder="Enter your name" id="name" required />
+        <label id="name-label" class="form-label" for="name">Name</label>
+        <input placeholder="Enter your name" id="name" required type="text" />
       </div>
       <div class="form-control">
-        <label id="email-label">Email</label>
+        <label id="email-label" class="form-label" for="email">Email</label>
         <input
           placeholder="Enter your email"
+          type="text"
           id="email"
           type="email"
           required
         />
       </div>
       <div class="form-control">
-        <label id="number-label">Age</label>
+        <label id="number-label" class="form-label" for="number">Number</label>
         <input
-          placeholder="Enter your age"
+          placeholder="Enter your Number"
+          type="text"
           id="number"
           type="number"
           min="0"
@@ -42,7 +42,7 @@
         />
       </div>
       <div class="form-control">
-        <label>Dropdown</label>
+        <p class="form-label">Dropdown</p>
         <select id="dropdown">
           <option disabled selected value>Select an option</option>
           <option value="a">a</option>
@@ -51,7 +51,7 @@
         </select>
       </div>
       <div class="form-control">
-        <p>Radio button</p>
+        <p class="form-label">Radio button</p>
         <label>
           <input value="radioa" type="radio" name="radio" checked />
           Radio A
@@ -66,7 +66,7 @@
         </label>
       </div>
       <div class="form-control">
-        <p>Checked box</p>
+        <p class="form-label">Checked box</p>
         <label>
           <input value="checkeda" type="checkbox" />
           Checked A
@@ -85,7 +85,7 @@
         </label>
       </div>
       <div class="form-control">
-        <p>more comment?</p>
+        <p class="form-label">Comment?</p>
         <textarea></textarea>
       </div>
       <div class="form-control">
@@ -93,6 +93,7 @@
       </div>
     </form>
 
+    <p class="copyright">2021 © Made with ❤️ By Yuuki</p>
     <script src="./index.js"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>

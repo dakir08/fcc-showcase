@@ -1,6 +1,8 @@
 :root {
   --font: "Roboto", sans-serif;
   --font-size: 16px;
+  --primary-color: #000046;
+  --secondary-color: #1cb5e0;
 }
 
 * {
@@ -12,30 +14,94 @@ html {
 }
 
 body {
-  background-color: #f6f7fb;
   font-family: var(--font);
+  background: var(--primary-color); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--primary-color)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    var(--secondary-color),
+    var(--primary-color)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #title {
   text-align: center;
   margin-top: 1rem;
   font-size: 2.5rem;
+  color: #ffffff;
+  text-transform: capitalize;
 }
 
 #description {
   text-align: center;
+  color: #ffffff;
+  text-transform: capitalize;
 }
 
 #survey-form {
   margin: auto;
   max-width: 720px;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 3rem;
-  border-radius: 20px;
+  border: 5px solid var(--secondary-color);
+  color: white;
 }
 
 .form-control {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+}
+.form-label {
+  margin-bottom: 0.25rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem 1rem;
+  transition: 0.3s all ease;
+}
+
+input[type="text"]:focus {
+  outline: 2px solid var(--secondary-color);
+}
+
+.copyright {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: aliceblue;
+}
+
+select {
+  padding: 0.5rem 1rem;
+  transition: 0.3s all ease;
+  appearance: none;
+}
+
+select:hover {
+  outline: 2px solid var(--secondary-color);
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+}
+
+option {
+  padding: 10rem 1rem;
+}
+
+textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: 2px solid var(--secondary-color);
 }
