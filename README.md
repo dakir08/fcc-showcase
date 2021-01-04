@@ -36,4 +36,4 @@ This project is made with ❤️ by Yuuki, feel free to pull request or create a
 
 ## Authors
 
-Yuuki
+Max.
