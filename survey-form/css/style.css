@@ -9,11 +9,11 @@
 
 html {
   font-size: var(--font-size);
-  font-family: var(--font);
 }
 
 body {
   background-color: #f6f7fb;
+  font-family: var(--font);
 }
 
 #title {
@@ -24,4 +24,18 @@ body {
 
 #description {
   text-align: center;
+}
+
+#survey-form {
+  margin: auto;
+  max-width: 720px;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 20px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }

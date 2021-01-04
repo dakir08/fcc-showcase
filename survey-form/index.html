@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
     <link rel="stylesheet" href="../shared/css/reboot.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <h1 id="title">My Survey</h1>
@@ -18,11 +18,11 @@
       Thank you for taking the time to help us improve the platform
     </p>
     <form id="survey-form">
-      <div>
+      <div class="form-control">
         <label id="name-label">Name</label>
         <input placeholder="Enter your name" id="name" required />
       </div>
-      <div>
+      <div class="form-control">
         <label id="email-label">Email</label>
         <input
           placeholder="Enter your email"
@@ -31,7 +31,7 @@
           required
         />
       </div>
-      <div>
+      <div class="form-control">
         <label id="number-label">Age</label>
         <input
           placeholder="Enter your age"
@@ -41,7 +41,7 @@
           max="100"
         />
       </div>
-      <div>
+      <div class="form-control">
         <label>Dropdown</label>
         <select id="dropdown">
           <option disabled selected value>Select an option</option>
@@ -50,7 +50,7 @@
           <option value="c">c</option>
         </select>
       </div>
-      <div>
+      <div class="form-control">
         <p>Radio button</p>
         <label>
           <input value="radioa" type="radio" name="radio" checked />
@@ -65,7 +65,7 @@
           Radio C
         </label>
       </div>
-      <div>
+      <div class="form-control">
         <p>Checked box</p>
         <label>
           <input value="checkeda" type="checkbox" />
@@ -84,11 +84,11 @@
           Checked D
         </label>
       </div>
-      <div>
+      <div class="form-control">
         <p>more comment?</p>
         <textarea></textarea>
       </div>
-      <div>
+      <div class="form-control">
         <button id="submit">Submit</button>
       </div>
     </form>
