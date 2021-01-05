@@ -8,7 +8,7 @@ Demo: soon
 
 ### Prerequisites
 
-First thing, you need to get node, you could download at
+First thing, you need to get node, you could download in here
 
 ```
 https://nodejs.org/en/
