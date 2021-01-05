@@ -52,7 +52,8 @@ code {
 }
 
 #navbar {
-  width: 500px;
+  display: flex;
+  min-width: 300px;
   background-color: var(--navbar-color);
   border-right: 1px solid #ececec;
 }
@@ -68,4 +69,43 @@ code {
   display: flex;
   flex-direction: column;
   padding: 1.5rem 2rem;
+}
+
+@media only screen and (max-width: 815px) {
+  body {
+    flex-direction: column;
+  }
+
+  #navbar {
+    justify-content: center;
+  }
+
+  .navbar-wrapper {
+    position: relative;
+  }
+}
+
+.navbar-header-container {
+  display: flex;
+  padding-left: 1rem;
+}
+
+#navbar-header {
+  font-size: 1.5rem;
+}
+
+.ul-navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.navbar-item {
+  margin: 1rem 2rem;
+}
+
+.navbar-item a {
+  color: var(--function-color);
+  text-decoration: none;
 }
