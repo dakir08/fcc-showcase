@@ -6,7 +6,8 @@
   "scripts": {
     "survey-form": "parcel responsive-web-design/survey-form/index.html -p 3000",
     "tribute-page": "parcel responsive-web-design/tribute-page/index.html -p 3000",
-    "technical-document": "parcel responsive-web-design/technical-document/index.html -p 3000"
+    "technical-document": "parcel responsive-web-design/technical-document/index.html -p 3000",
+    "product-landing": "parcel responsive-web-design/product-landing/index.html -p 3000"
   },
   "keywords": [],
   "author": "",
